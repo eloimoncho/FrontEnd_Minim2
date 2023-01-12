@@ -411,4 +411,9 @@ public class Activity_Pou_Salon extends AppCompatActivity{
             StyleableToast.makeText(this, "¡Partida Guardada!", R.style.exampleToast).show();
         }
     }
+
+    public void clickDenunciar(View view){
+        Intent myIntent = new Intent(Activity_Pou_Salon.this, Activity_Denunciar.class);
+        Activity_Pou_Salon.this.startActivity(myIntent);
+    }
 }
