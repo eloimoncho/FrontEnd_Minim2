@@ -1,0 +1,1 @@
+Aquest és el FrontEnd del mínim 2
