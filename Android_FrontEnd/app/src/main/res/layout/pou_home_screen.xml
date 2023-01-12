@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fondoPantalla"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color9"
+    tools:context=".Activities.Activity_Pou_Home">
+
+    <TextView
+        android:id="@+id/textWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="Abrir la Página Web"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonRegistro" />
+
+    <Button
+        android:id="@+id/botonWeb"
+        android:layout_width="140dp"
+        android:layout_height="54dp"
+        android:backgroundTint="@color/color10"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:onClick="clickBoton"
+        android:text="WEB"
+        android:textSize="26dp"
+        app:cornerRadius="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textWeb"
+        tools:ignore="UsingOnClickInXml" />
+
+    <TextView
+        android:id="@+id/textPou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pou_font"
+        android:text="POU"
+        android:textColor="#000000"
+        android:textSize="68dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLasAventurasDe" />
+
+    <TextView
+        android:id="@+id/textLasAventurasDe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/pou_font"
+        android:text="LAS AVENTURAS DE"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="Registrar un Pou"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPou" />
+
+    <TextView
+        android:id="@+id/textLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="Jugar con tu Pou"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonWeb" />
+
+    <Button
+        android:id="@+id/botonRegistro"
+        android:layout_width="140dp"
+        android:layout_height="54dp"
+        android:backgroundTint="@color/color11"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:onClick="clickBoton"
+        android:text="NEW"
+        android:textSize="26dp"
+        app:cornerRadius="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRegistro" />
+
+    <Button
+        android:id="@+id/botonLogin"
+        android:layout_width="140dp"
+        android:layout_height="54dp"
+        android:backgroundTint="@color/color6"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:onClick="clickBoton"
+        android:text="LOGIN"
+        android:textSize="26dp"
+        app:cornerRadius="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLogin"
+        tools:ignore="UsingOnClickInXml" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonLogin"
+        app:srcCompat="@drawable/display_pou_home" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

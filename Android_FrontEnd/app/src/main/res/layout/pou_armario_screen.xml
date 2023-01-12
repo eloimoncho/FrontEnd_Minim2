@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color7"
+    tools:context=".Activities.Activity_Pou_Armario">
+
+    <TextView
+        android:id="@+id/titulo_acceso3"
+        android:layout_width="320dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="Bambas"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_Armario_Camiseta_nada" />
+
+    <TextView
+        android:id="@+id/titulo_acceso4"
+        android:layout_width="320dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="Gafas"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_Armario_Bambas_nada" />
+
+    <TextView
+        android:id="@+id/titulo_acceso5"
+        android:layout_width="320dp"
+        android:layout_height="20dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="Gorras"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_Armario_Gafas_nada" />
+
+    <TextView
+        android:id="@+id/titulo_acceso2"
+        android:layout_width="320dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="Camisetas"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_izquierda_armario" />
+
+    <TextView
+        android:id="@+id/dinero_armario"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="1000"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+
+    <TextView
+        android:id="@+id/hambre_armario"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="100"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintStart_toEndOf="@+id/dinero_armario"
+        app:layout_constraintTop_toTopOf="@+id/dinero_armario" />
+
+    <TextView
+        android:id="@+id/titulo_armario"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="ARMARIO"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_izquierda_armario"
+        app:layout_constraintEnd_toStartOf="@+id/btn_derecha_armario"
+        app:layout_constraintStart_toEndOf="@+id/btn_izquierda_armario"
+        app:layout_constraintTop_toTopOf="@+id/btn_izquierda_armario" />
+
+    <TextView
+        android:id="@+id/salud_armario"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="100"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintStart_toEndOf="@+id/hambre_armario"
+        app:layout_constraintTop_toTopOf="@+id/hambre_armario" />
+
+    <TextView
+        android:id="@+id/diversion_armario"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="100"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintStart_toEndOf="@+id/salud_armario"
+        app:layout_constraintTop_toTopOf="@+id/salud_armario" />
+
+    <TextView
+        android:id="@+id/sueno_armario"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="100"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintStart_toEndOf="@+id/diversion_armario"
+        app:layout_constraintTop_toTopOf="@+id/diversion_armario" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="409dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/display_barra_superior" />
+
+    <ImageButton
+        android:id="@+id/btn_izquierda_armario"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="btnLeft"
+        android:background="@drawable/display_left_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hambre_armario"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_derecha_armario"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="10dp"
+        android:onClick="btnRight"
+        android:background="@drawable/display_right_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_izquierda_armario"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/img_Armario_Camiseta_nada"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="24dp"
+        android:onClick="clicarArmario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_acceso2"
+        app:srcCompat="@drawable/armario_default"
+        tools:ignore="DuplicateClickableBoundsCheck" />
+
+    <ImageView
+        android:id="@+id/img_Armario_Bambas_nada"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:onClick="clicarArmario"
+        app:layout_constraintStart_toStartOf="@+id/img_Armario_Camiseta_nada"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_acceso3"
+        app:srcCompat="@drawable/armario_default"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/img_Armario_Gafas_nada"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:onClick="clicarArmario"
+        app:layout_constraintStart_toStartOf="@+id/img_Armario_Bambas_nada"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_acceso4"
+        app:srcCompat="@drawable/armario_default" />
+
+    <ImageView
+        android:id="@+id/img_Armario_Gorra_nada"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:onClick="clicarArmario"
+        app:layout_constraintStart_toStartOf="@+id/img_Armario_Gafas_nada"
+        app:layout_constraintTop_toBottomOf="@+id/titulo_acceso5"
+        app:srcCompat="@drawable/armario_default" />
+
+    <ImageView
+        android:id="@+id/img_Armario_Camiseta_pijama"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:onClick="clicarArmario"
+        app:layout_constraintStart_toEndOf="@+id/img_Armario_Camiseta_nada"
+        app:layout_constraintTop_toTopOf="@+id/img_Armario_Camiseta_nada"
+        app:srcCompat="@drawable/articulo_tienda_pijama" />
+
+    <ImageView
+        android:id="@+id/img_Armario_Camiseta_fcb"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:onClick="clicarArmario"
+        app:layout_constraintStart_toEndOf="@+id/img_Armario_Camiseta_pijama"
+        app:layout_constraintTop_toTopOf="@+id/img_Armario_Camiseta_pijama"
+        app:srcCompat="@drawable/articulo_tienda_fcb" />
+
+    <ImageView
+        android:id="@+id/img_Armario_Camiseta_spain"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="24dp"
+        android:onClick="clicarArmario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_Armario_Camiseta_fcb"
+        app:layout_constraintTop_toTopOf="@+id/img_Armario_Camiseta_fcb"
+        app:srcCompat="@drawable/articulo_tienda_spain" />
+
+    <ImageView
+        android:id="@+id/img_Armario_Bambas_messi"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:onClick="clicarArmario"
+        app:layout_constraintStart_toEndOf="@+id/img_Armario_Bambas_nada"
+        app:layout_constraintTop_toTopOf="@+id/img_Armario_Bambas_nada"
+        app:srcCompat="@drawable/articulo_tienda_messi" />
+
+    <ImageView
+        android:id="@+id/img_Armario_Bambas_rafa"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:onClick="clicarArmario"
+        app:layout_constraintStart_toEndOf="@+id/img_Armario_Bambas_messi"
+        app:layout_constraintTop_toTopOf="@+id/img_Armario_Bambas_messi"
+        app:srcCompat="@drawable/articulo_tienda_rafa" />
+
+    <ImageView
+        android:id="@+id/img_Armario_Bambas_veja"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:onClick="clicarArmario"
+        app:layout_constraintEnd_toEndOf="@+id/img_Armario_Camiseta_spain"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/img_Armario_Bambas_rafa"
+        app:layout_constraintTop_toTopOf="@+id/img_Armario_Bambas_rafa"
+        app:srcCompat="@drawable/articulo_tienda_veja" />
+
+    <ImageView
+        android:id="@+id/img_Armario_Gafas_fiesta"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:onClick="clicarArmario"
+        app:layout_constraintStart_toEndOf="@+id/img_Armario_Gafas_nada"
+        app:layout_constraintTop_toTopOf="@+id/img_Armario_Gafas_nada"
+        app:srcCompat="@drawable/articulo_tienda_fiesta" />
+
+    <ImageView
+        android:id="@+id/img_Armario_Gafas_rayban"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:onClick="clicarArmario"
+        app:layout_constraintStart_toEndOf="@+id/img_Armario_Gafas_fiesta"
+        app:layout_constraintTop_toTopOf="@+id/img_Armario_Gafas_fiesta"
+        app:srcCompat="@drawable/articulo_tienda_rayban" />
+
+    <ImageView
+        android:id="@+id/img_Armario_Gafas_ciclismo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:onClick="clicarArmario"
+        app:layout_constraintStart_toEndOf="@+id/img_Armario_Gafas_rayban"
+        app:layout_constraintTop_toTopOf="@+id/img_Armario_Gafas_rayban"
+        app:srcCompat="@drawable/articulo_tienda_ciclismo" />
+
+    <ImageView
+        android:id="@+id/img_Armario_Gorra_cerveza"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:onClick="clicarArmario"
+        app:layout_constraintStart_toEndOf="@+id/img_Armario_Gorra_nada"
+        app:layout_constraintTop_toTopOf="@+id/img_Armario_Gorra_nada"
+        app:srcCompat="@drawable/articulo_tienda_cerveza" />
+
+    <ImageView
+        android:id="@+id/img_Armario_Gorra_boina"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:onClick="clicarArmario"
+        app:layout_constraintStart_toEndOf="@+id/img_Armario_Gorra_cerveza"
+        app:layout_constraintTop_toTopOf="@+id/img_Armario_Gorra_cerveza"
+        app:srcCompat="@drawable/articulo_tienda_boina" />
+
+    <ImageView
+        android:id="@+id/img_Armario_Gorra_polo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:onClick="clicarArmario"
+        app:layout_constraintStart_toEndOf="@+id/img_Armario_Gorra_boina"
+        app:layout_constraintTop_toTopOf="@+id/img_Armario_Gorra_boina"
+        app:srcCompat="@drawable/articulo_tienda_polo" />
+
+    <ImageButton
+        android:id="@+id/btn_Armario_Camiseta_nada"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/armario_no_disponible"
+        android:onClick="clicarArmario"
+        app:layout_constraintStart_toStartOf="@+id/img_Armario_Camiseta_nada"
+        app:layout_constraintTop_toTopOf="@+id/img_Armario_Camiseta_nada" />
+
+    <ImageButton
+        android:id="@+id/btn_Armario_Gorra_cerveza"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/armario_no_disponible"
+        android:onClick="clicarArmario"
+        app:layout_constraintStart_toEndOf="@+id/img_Armario_Gorra_nada"
+        app:layout_constraintTop_toTopOf="@+id/img_Armario_Gorra_cerveza" />
+
+    <ImageButton
+        android:id="@+id/btn_Armario_Gafas_fiesta"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/armario_no_disponible"
+        android:onClick="clicarArmario"
+        app:layout_constraintStart_toEndOf="@+id/img_Armario_Gafas_nada"
+        app:layout_constraintTop_toTopOf="@+id/img_Armario_Gafas_fiesta" />
+
+    <ImageButton
+        android:id="@+id/btn_Armario_Bambas_messi"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/armario_no_disponible"
+        android:onClick="clicarArmario"
+        app:layout_constraintStart_toEndOf="@+id/img_Armario_Bambas_nada"
+        app:layout_constraintTop_toTopOf="@+id/img_Armario_Bambas_messi" />
+
+    <ImageButton
+        android:id="@+id/btn_Armario_Camiseta_pijama"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/armario_no_disponible"
+        android:onClick="clicarArmario"
+        app:layout_constraintStart_toEndOf="@+id/img_Armario_Camiseta_nada"
+        app:layout_constraintTop_toTopOf="@+id/img_Armario_Camiseta_pijama" />
+
+    <ImageButton
+        android:id="@+id/btn_Armario_Gorra_polo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/armario_no_disponible"
+        android:onClick="clicarArmario"
+        app:layout_constraintStart_toEndOf="@+id/img_Armario_Gorra_boina"
+        app:layout_constraintTop_toTopOf="@+id/img_Armario_Gorra_polo" />
+
+    <ImageButton
+        android:id="@+id/btn_Armario_Camiseta_fcb"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/armario_no_disponible"
+        android:onClick="clicarArmario"
+        app:layout_constraintStart_toEndOf="@+id/img_Armario_Camiseta_pijama"
+        app:layout_constraintTop_toTopOf="@+id/img_Armario_Camiseta_fcb" />
+
+    <ImageButton
+        android:id="@+id/btn_Armario_Bambas_rafa"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/armario_no_disponible"
+        android:onClick="clicarArmario"
+        app:layout_constraintStart_toEndOf="@+id/img_Armario_Bambas_messi"
+        app:layout_constraintTop_toTopOf="@+id/img_Armario_Bambas_rafa" />
+
+    <ImageButton
+        android:id="@+id/btn_Armario_Gafas_rayban"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/armario_no_disponible"
+        android:onClick="clicarArmario"
+        app:layout_constraintStart_toEndOf="@+id/img_Armario_Gafas_fiesta"
+        app:layout_constraintTop_toTopOf="@+id/img_Armario_Gafas_rayban" />
+
+    <ImageButton
+        android:id="@+id/btn_Armario_Gorra_boina"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/armario_no_disponible"
+        android:onClick="clicarArmario"
+        app:layout_constraintStart_toEndOf="@+id/img_Armario_Gorra_cerveza"
+        app:layout_constraintTop_toTopOf="@+id/img_Armario_Gorra_boina" />
+
+    <ImageButton
+        android:id="@+id/btn_Armario_Camiseta_spain"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/armario_no_disponible"
+        android:onClick="clicarArmario"
+        app:layout_constraintStart_toEndOf="@+id/img_Armario_Camiseta_fcb"
+        app:layout_constraintTop_toTopOf="@+id/img_Armario_Camiseta_spain" />
+
+    <ImageButton
+        android:id="@+id/btn_Armario_Bambas_veja"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/armario_no_disponible"
+        android:onClick="clicarArmario"
+        app:layout_constraintStart_toEndOf="@+id/img_Armario_Bambas_rafa"
+        app:layout_constraintTop_toTopOf="@+id/img_Armario_Bambas_veja" />
+
+    <ImageButton
+        android:id="@+id/btn_Armario_Bambas_nada"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/armario_no_disponible"
+        android:onClick="clicarArmario"
+        app:layout_constraintStart_toStartOf="@+id/img_Armario_Bambas_nada"
+        app:layout_constraintTop_toTopOf="@+id/img_Armario_Bambas_nada" />
+
+    <ImageButton
+        android:id="@+id/btn_Armario_Gafas_nada"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/armario_no_disponible"
+        android:onClick="clicarArmario"
+        app:layout_constraintStart_toStartOf="@+id/img_Armario_Gafas_nada"
+        app:layout_constraintTop_toTopOf="@+id/img_Armario_Gafas_nada" />
+
+    <ImageButton
+        android:id="@+id/btn_Armario_Gorra_nada"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/armario_no_disponible"
+        android:onClick="clicarArmario"
+        app:layout_constraintStart_toStartOf="@+id/img_Armario_Gorra_nada"
+        app:layout_constraintTop_toTopOf="@+id/img_Armario_Gorra_nada" />
+
+    <ImageButton
+        android:id="@+id/btn_Armario_Gafas_ciclismo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/armario_no_disponible"
+        android:onClick="clicarArmario"
+        app:layout_constraintStart_toEndOf="@+id/img_Armario_Gafas_rayban"
+        app:layout_constraintTop_toTopOf="@+id/img_Armario_Gafas_ciclismo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color3"
+    tools:context=".Activities.Activity_Pou_Cocina">
+
+    <ImageButton
+        android:id="@+id/btn_info_roncola"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/info_button_article"
+        android:onClick="darInfoArticulo"
+        app:layout_constraintEnd_toEndOf="@+id/btn_consumir_roncola"
+        app:layout_constraintStart_toStartOf="@+id/btn_consumir_roncola"
+        app:layout_constraintTop_toBottomOf="@+id/estado_cocina"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_info_aquarius"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/info_button_article"
+        android:onClick="darInfoArticulo"
+        app:layout_constraintEnd_toStartOf="@+id/btn_consumir_roncola"
+        app:layout_constraintStart_toStartOf="@+id/btn_consumir_aquarius"
+        app:layout_constraintTop_toBottomOf="@+id/estado_cocina"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_info_agua"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/info_button_article"
+        android:onClick="darInfoArticulo"
+        app:layout_constraintEnd_toStartOf="@+id/btn_consumir_aquarius"
+        app:layout_constraintStart_toStartOf="@+id/btn_consumir_agua"
+        app:layout_constraintTop_toBottomOf="@+id/estado_cocina"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_info_pizza"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/info_button_article"
+        android:onClick="darInfoArticulo"
+        app:layout_constraintEnd_toStartOf="@+id/btn_consumir_agua"
+        app:layout_constraintStart_toStartOf="@+id/btn_consumir_pizza"
+        app:layout_constraintTop_toBottomOf="@+id/estado_cocina"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_info_manzana"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/info_button_article"
+        android:onClick="darInfoArticulo"
+        app:layout_constraintEnd_toStartOf="@+id/btn_consumir_pizza"
+        app:layout_constraintStart_toEndOf="@+id/btn_consumir_candy"
+        app:layout_constraintTop_toBottomOf="@+id/estado_cocina"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_info_candy"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="@drawable/info_button_article"
+        android:onClick="darInfoArticulo"
+        app:layout_constraintEnd_toEndOf="@+id/btn_consumir_candy"
+        app:layout_constraintStart_toStartOf="@+id/btn_consumir_candy"
+        app:layout_constraintTop_toBottomOf="@+id/estado_cocina"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/txt_cantidad_apple"
+        android:layout_width="66dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="4"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_cantidad_candy"
+        app:layout_constraintTop_toTopOf="@+id/txt_cantidad_candy" />
+
+    <TextView
+        android:id="@+id/txt_cantidad_roncola"
+        android:layout_width="66dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="10"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_cantidad_aquarius"
+        app:layout_constraintTop_toTopOf="@+id/txt_cantidad_aquarius" />
+
+    <TextView
+        android:id="@+id/txt_cantidad_aquarius"
+        android:layout_width="66dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="8"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_cantidad_agua"
+        app:layout_constraintTop_toTopOf="@+id/txt_cantidad_agua" />
+
+    <TextView
+        android:id="@+id/txt_cantidad_agua"
+        android:layout_width="66dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="120"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_cantidad_pizza"
+        app:layout_constraintTop_toTopOf="@+id/txt_cantidad_pizza" />
+
+    <TextView
+        android:id="@+id/txt_cantidad_pizza"
+        android:layout_width="66dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="22"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_cantidad_apple"
+        app:layout_constraintTop_toTopOf="@+id/txt_cantidad_apple" />
+
+    <TextView
+        android:id="@+id/txt_cantidad_candy"
+        android:layout_width="66dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="6"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/btn_consumir_candy"
+        app:layout_constraintTop_toBottomOf="@+id/btn_consumir_candy" />
+
+    <ImageButton
+        android:id="@+id/btn_consumir_roncola"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginEnd="9dp"
+        android:background="@drawable/articulo_consumible_roncola"
+        android:onClick="clicarConsumible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_consumir_aquarius"
+        app:layout_constraintTop_toTopOf="@+id/btn_consumir_aquarius"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_consumir_aquarius"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:onClick="clicarConsumible"
+        android:background="@drawable/articulo_consumible_aquarius"
+        app:layout_constraintStart_toEndOf="@+id/btn_consumir_agua"
+        app:layout_constraintTop_toTopOf="@+id/btn_consumir_agua"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_consumir_agua"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:onClick="clicarConsumible"
+        android:background="@drawable/articulo_consumible_agua"
+        app:layout_constraintStart_toEndOf="@+id/btn_consumir_pizza"
+        app:layout_constraintTop_toTopOf="@+id/btn_consumir_pizza"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_consumir_pizza"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:onClick="clicarConsumible"
+        android:background="@drawable/articulo_consumible_pizza"
+        app:layout_constraintStart_toEndOf="@+id/btn_consumir_manzana"
+        app:layout_constraintTop_toTopOf="@+id/btn_consumir_manzana"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_consumir_candy"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="9dp"
+        android:background="@drawable/articulo_consumible_candy"
+        android:onClick="clicarConsumible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_info_candy"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/titulo_cocina"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="COCINA"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_derecha_cocina"
+        app:layout_constraintEnd_toStartOf="@+id/btn_derecha_cocina"
+        app:layout_constraintStart_toEndOf="@+id/btn_izquierda_cocina"
+        app:layout_constraintTop_toTopOf="@+id/btn_derecha_cocina" />
+
+    <TextView
+        android:id="@+id/dinero_cocina"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="1000"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toStartOf="@+id/hambre_cocina"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/hambre_cocina"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toStartOf="@+id/salud_cocina"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/salud_cocina"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toStartOf="@+id/diversion_cocina"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/diversion_cocina"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toStartOf="@+id/sueno_cocina"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/sueno_cocina"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="409dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/display_barra_superior" />
+
+    <ImageButton
+        android:id="@+id/btn_izquierda_cocina"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="btnLeft"
+        android:background="@drawable/display_left_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salud_cocina"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_derecha_cocina"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:onClick="btnRight"
+        android:background="@drawable/display_right_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salud_cocina"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/estado_cocina"
+        android:layout_width="322dp"
+        android:layout_height="322dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_derecha_cocina"
+        app:srcCompat="@drawable/outfit_base_normal" />
+
+    <ImageView
+        android:id="@+id/camiseta_cocina"
+        android:layout_width="322dp"
+        android:layout_height="322dp"
+        app:layout_constraintEnd_toEndOf="@+id/estado_cocina"
+        app:layout_constraintTop_toTopOf="@+id/estado_cocina"
+        app:srcCompat="@drawable/outfit_camiseta_spain" />
+
+    <ImageView
+        android:id="@+id/bambas_cocina"
+        android:layout_width="322dp"
+        android:layout_height="322dp"
+        app:layout_constraintStart_toStartOf="@+id/estado_cocina"
+        app:layout_constraintTop_toTopOf="@+id/estado_cocina"
+        app:srcCompat="@drawable/outfit_bambas_veja" />
+
+    <ImageView
+        android:id="@+id/blink_cocina"
+        android:layout_width="322dp"
+        android:layout_height="322dp"
+        app:layout_constraintEnd_toEndOf="@+id/estado_cocina"
+        app:layout_constraintTop_toTopOf="@+id/estado_cocina"
+        app:srcCompat="@drawable/outfit_blink_android" />
+
+    <ImageView
+        android:id="@+id/gafas_cocina"
+        android:layout_width="322dp"
+        android:layout_height="322dp"
+        app:layout_constraintEnd_toEndOf="@+id/estado_cocina"
+        app:layout_constraintTop_toTopOf="@+id/estado_cocina"
+        app:srcCompat="@drawable/outfit_gafas_rayban" />
+
+    <ImageView
+        android:id="@+id/gorra_cocina"
+        android:layout_width="322dp"
+        android:layout_height="322dp"
+        app:layout_constraintStart_toStartOf="@+id/estado_cocina"
+        app:layout_constraintTop_toTopOf="@+id/estado_cocina"
+        app:srcCompat="@drawable/outfit_gorra_cerveza" />
+
+    <ImageButton
+        android:id="@+id/btn_consumir_manzana"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:onClick="clicarConsumible"
+        android:background="@drawable/articulo_consumible_manzana"
+        app:layout_constraintStart_toEndOf="@+id/btn_consumir_candy"
+        app:layout_constraintTop_toTopOf="@+id/btn_consumir_candy"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

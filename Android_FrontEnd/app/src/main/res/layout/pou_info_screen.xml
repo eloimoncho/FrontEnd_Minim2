@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color2"
+    tools:context=".Activities.Activity_Pou_Info">
+
+    <Button
+        android:id="@+id/botonActualizar"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/color11"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:onClick="clickActualizar"
+        android:text="ACTUALIZAR"
+        android:textSize="26dp"
+        app:cornerRadius="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout14"
+        tools:ignore="UsingOnClickInXml" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout14"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout13">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputPasswordPou"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:fontFamily="@font/pou_font"
+            android:gravity="center"
+            android:hint="Password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout20"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:enabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_izquierda_info">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputIdPou"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:fontFamily="@font/pou_font"
+            android:gravity="center"
+            android:hint="Pou ID" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout11"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout20">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputNombrePou"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:fontFamily="@font/pou_font"
+            android:gravity="center"
+            android:hint="Nombre" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/botonLogout"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/color10"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:onClick="clickLogout"
+        android:text="LOGOUT"
+        android:textSize="26dp"
+        app:cornerRadius="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botonActualizar"
+        tools:ignore="UsingOnClickInXml" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="409dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/display_barra_superior" />
+
+    <TextView
+        android:id="@+id/diversion_info"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="100"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toStartOf="@+id/sueno_info"
+        app:layout_constraintTop_toTopOf="@+id/salud_info" />
+
+    <TextView
+        android:id="@+id/titulo_info"
+        android:layout_width="220dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="INFO"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_izquierda_info"
+        app:layout_constraintEnd_toStartOf="@+id/btn_derecha_info"
+        app:layout_constraintStart_toEndOf="@+id/btn_izquierda_info"
+        app:layout_constraintTop_toTopOf="@+id/btn_izquierda_info" />
+
+    <TextView
+        android:id="@+id/hambre_info"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="100"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toStartOf="@+id/salud_info"
+        app:layout_constraintStart_toEndOf="@+id/dinero_info"
+        app:layout_constraintTop_toTopOf="@+id/dinero_info" />
+
+    <TextView
+        android:id="@+id/dinero_info"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="1000"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/sueno_info"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="5dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="100"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/diversion_info" />
+
+    <TextView
+        android:id="@+id/salud_info"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        android:text="100"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toStartOf="@+id/diversion_info"
+        app:layout_constraintTop_toTopOf="@+id/hambre_info" />
+
+    <ImageButton
+        android:id="@+id/btn_derecha_info"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="10dp"
+        android:onClick="btnRight"
+        android:background="@drawable/display_right_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_izquierda_info"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_izquierda_info"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="btnLeft"
+        android:background="@drawable/display_left_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/salud_info"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout12"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout11">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputNacimientoPou"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:fontFamily="@font/pou_font"
+            android:gravity="center"
+            android:hint="Nacimiento" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout13"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pou_font"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout12">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputCorreoPou"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:fontFamily="@font/pou_font"
+            android:gravity="center"
+            android:hint="Correo" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
